@@ -10,7 +10,7 @@ something that highlights their utility.
 
 
 from functools import reduce
-import string 
+import string
 from random import randint
 
 names = ["harry", "eugene", "sally", "thomas"]
