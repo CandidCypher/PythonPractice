@@ -5,11 +5,13 @@ def my_decorator(func):
     Info: Decorator function to add additional formatting to a function
     that prints strings.
     """
+    # General Decorator Pattern
     def wrap_func(*args, **kwargs):
         print("*******")
         func(*args, **kwargs)
         print("*******")
     return wrap_func
+
 
 @my_decorator
 def hello(*args, **kwargs):
