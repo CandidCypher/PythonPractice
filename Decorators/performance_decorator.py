@@ -4,11 +4,11 @@ Demonstration of a real world application of the power of decorators
 Given a series of functions that are used elsewhere in code:
  - imported locally.
 """
-
-from functions import long_itteration, long_zip
 from time import time
+from functions import long_itteration, long_zip
 
-def performance(func):
+
+def performance(func, func_name):
     """
     Info: timing decorator funcction that reports the time that it takes for a funciton to run
     """
@@ -25,6 +25,8 @@ def performance(func):
 
 @performance
 def test_function_execution(func, *args, **kwargs):
+    """
+    Test method that tests the execution of a provided method"""
     func(*args, **kwargs)
 
 
