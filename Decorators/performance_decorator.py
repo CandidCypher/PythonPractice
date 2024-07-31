@@ -23,7 +23,7 @@ def performance(func, *args, **kwargs):
             print(f"Function name: {kwargs['function_name']}")
 
         print(f" Testing time: {delta_t}s")
-        
+
         print("*********")
     return wrap_func
 
