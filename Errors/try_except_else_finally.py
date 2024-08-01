@@ -20,4 +20,3 @@ if __name__=="__main__":
             print("Thank you!")
         finally:
             print(f"Logging call")
-        print("Can you hear me?") #<- Question when does this print?

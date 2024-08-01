@@ -10,7 +10,7 @@ def sum(num1:int, num2:int)->int:
     """
     try:
         return num1 + num2
-    except (TypeError, ZeroDivisionError) as err:
+    except (TypeError) as err:
         print(f"Sum function recieved incorrect arguments: {err}")
 
 
