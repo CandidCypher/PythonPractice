@@ -20,7 +20,7 @@ def authenticated(fn):
     
   # code here
 
-@authenticated
+@authenticated # <- Decorator is called first before getting to the function
 def message_friends(user:dict):
     """
     Info: Messaging function that sends messages.
@@ -30,5 +30,8 @@ def message_friends(user:dict):
     """
     print(f"{user['name']}, your message has been sent")
 
-message_friends(user1)
 
+if __name__ == "__main__":
+    # Reminder: Order of operations is to hit the decorator with the
+    # argument of the funciton (decorator(fucntion(*args, **kwargs)))
+    message_friends(user1)
