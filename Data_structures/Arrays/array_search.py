@@ -13,7 +13,7 @@ def linear_array_search(arr:array.array, value)->int:
             # protects from missing "=" by preventing an assigment
             # operation conditional check
             # Remove thhe second "=" and find out
-            return i
+            return idx
     return -1
 
 

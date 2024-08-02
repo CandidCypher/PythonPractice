@@ -39,6 +39,9 @@ if __name__ == "__main__":
     my_np_array = np.array([1,2,3,4,5])
     array_index_traversal(my_np_array)
     array_element_traversal(my_np_array)
+
+    print(np.delete(my_np_array, 3)) # Remember that np operations do not modify in place but return a new array.
+    
     res = array_element_access(my_np_array, 100)
     res2 = array_element_access(my_np_array, -100)
     res3 = array_element_access(my_np_array, 4)
