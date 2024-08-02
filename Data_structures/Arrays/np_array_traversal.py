@@ -1,15 +1,15 @@
-import array
+import numpy as np
 
-
-def array_index_traversal(arr):
+def array_index_traversal(arr:np.array):
     """
     Info: Helper method access elements of an array based upon the index
     """
-    for x in range(len(arr)):
+    for x in range(np.shape(arr)[0]):
+        # Numpy shape function returns a tuple of the shape of the array
         print(arr[x])
 
 
-def array_element_traversal(arr:array.array):
+def array_element_traversal(arr:np.array):
     """
     Info: Helper method to print out elements of an array
     """
@@ -17,7 +17,7 @@ def array_element_traversal(arr:array.array):
         print(element)
 
 
-def array_element_access(arr:array.array, idx:int):
+def array_element_access(arr:np.array, idx:int):
     """
     Info: Silly wrapper function to return an element of an array given
     an index
@@ -36,11 +36,11 @@ def array_element_access(arr:array.array, idx:int):
         return arr[idx]
 
 if __name__ == "__main__":
-    my_stl_array = array.array("i", [1,2,3,4,5])
-    array_index_traversal(my_stl_array)
-    array_element_traversal(my_stl_array)
-    res = array_element_access(my_stl_array, 100)
-    res2 = array_element_access(my_stl_array, -100)
-    res3 = array_element_access(my_stl_array, 4)
+    my_np_array = np.array([1,2,3,4,5])
+    array_index_traversal(my_np_array)
+    array_element_traversal(my_np_array)
+    res = array_element_access(my_np_array, 100)
+    res2 = array_element_access(my_np_array, -100)
+    res3 = array_element_access(my_np_array, 4)
     print(res, res2, res3)
 

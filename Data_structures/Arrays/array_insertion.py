@@ -25,3 +25,5 @@ if __name__ == "__main__":
     print(my_np_array)
     # ?? What happened, it didn't insert it? the np.insert function returns a new array
     my_np_array = np.insert(my_np_array,0,6)
+    my_np_array = np.insert(my_np_array, 2, 11)
+    my_np_array = np.append(my_np_array, 15)
