@@ -52,7 +52,7 @@ def accumulate(acc, item):
 if __name__ == "__main__":
     print(f"Map Demo \n.The input: {names}\n The output:",end="")
     print(list(map(capitalize_names, names)), end="\n\n")
-    print(f"Zip Demo \n The first input: {letters}\n The second input: {numbers}\n The Output: {list(zip(letters, numbers)), end }",
+    print(f"Zip Demo \n The first input: {letters}\n The second input: {numbers}\n The Output: {list(zip(letters, numbers)) }",
           end="\n\n")
     temperatures = generate_random_numbers(10,60,100)
     print(f"Filter Demo\n The input: {temperatures}\n The Output: {list(filter(is_overtemp, temperatures))}")
