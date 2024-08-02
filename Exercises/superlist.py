@@ -4,6 +4,10 @@
 
 
 class SuperList(list):
+    """
+    Info: SuperList class that is an extension of the standard list class
+    """
 
     def __len__(self):
         return 1000
+    
