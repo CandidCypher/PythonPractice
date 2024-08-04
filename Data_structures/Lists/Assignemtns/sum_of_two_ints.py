@@ -28,13 +28,23 @@ def find_sum_pairs(arr:list, desired_sum:int)->list:
     Output: (List) list of tuples thhat have the correct sum
     """
     results = []
-    for idx, val in enumerate(arr[:round(len(arr)/2)]):
-        for ydx, val2 in enumerate(arr):
+    # You have to itterate over the whole array because identified+2 pair
+    # could be next to each other at the end. 
+    # for x in range(len(arr)):
+    #     # Itterate over the whole array
+    #     for y in range(x+1, len(arr)):
+    #         # Itterate over the remainder of the array
+    #         if desired_sum == arr[x]+arr[y]:
+    #             results.append([[x,y], [arr[x],arr[y]]])
+    # return results
+
+    for idx, val in enumerate(arr):
+        for ydx, val2 in enumerate(arr[idx+1:]):
             if idx == ydx:
                 # Assumption is that we don't want to repeat
                 continue
             if desired_sum == val + val2:
-                results.append([[val,val2], [idx,ydx]])
+                results.append([[val,val2], [idx,ydx+idx+1]])
     return results
 
 
