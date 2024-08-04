@@ -55,3 +55,7 @@ print(dups)
 dups = find_duplicates_dict(my_list)
 print(dups)
 
+if __name__ == "__main__":
+    list_values = [1,2,3,4,5,6,7,8,9]
+    list_values.insert(0, 10)
+    list_values.update()

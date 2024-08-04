@@ -7,7 +7,7 @@ if __name__ == "__main__":
     count = 0
     while True:
         inp = input("Enter a Number: ")
-        if inp == 'done': break
+        if inp == 'done': break # <- didn't know you could do this.
         value = float(inp)
         total += value
         count += 1

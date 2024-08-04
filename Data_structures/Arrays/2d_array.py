@@ -19,15 +19,15 @@ if __name__ == "__main__":
     two_d_array = np.array([[1,2,3,4,5], [6,6,7,8,9], [10, 20, 30, 40, 50]], dtype=int)
     # print(two_d_array)
 
-    # # accessing rows
-    # print("Priting row elements")
-    # for row in two_d_array:
-    #     print(f"Row: {row}")
+    # accessing rows
+    print("Priting row elements")
+    for row in two_d_array:
+        print(f"Row: {row}")
 
-    # # accessing elements
-    # for row in two_d_array:
-    #     for element in row:
-    #         print(element)
+    # accessing elements
+    for row in two_d_array:
+        for element in row:
+            print(element)
 
     # Inserts a new column(axis=1) at index 0
     new_array = np.insert(two_d_array, 0, [[1,2,3]], axis=1)
