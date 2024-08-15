@@ -15,6 +15,8 @@ def multiply_by2(value:int)->int:
     """
     return value*2
 
+test_values = [1,2,3,4,5,6]
+test = list(map(lambda item : item**2, test_values))
 
 if __name__ == "__main__":
     values = [1,2,3,4,5]

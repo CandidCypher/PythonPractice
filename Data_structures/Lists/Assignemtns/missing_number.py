@@ -13,7 +13,6 @@ def find_missing_value(arr:list, number_vals:int)->int:
     a list of numbers
     """
     low = min(arr)
-    high = max(arr)
     num_missing = number_vals - len(arr)
     # The missing value should be somewhere between high and low
     # and the length of the list indicates how many values may be missing

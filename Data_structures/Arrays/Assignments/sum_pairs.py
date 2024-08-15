@@ -8,7 +8,7 @@ sum is equal to a given number. Do not consider commutative pairs.
 
 def find_sum_pairs(arr:list, value)->list:
     """
-
+    This is a doc string
     """
     sum_pairs = []
     for x in range(len(arr)):
