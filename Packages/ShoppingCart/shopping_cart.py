@@ -1,6 +1,7 @@
 """
 Shopping cart module
 """
+print(__name__)
 
 class ShoppingCart():
     """
