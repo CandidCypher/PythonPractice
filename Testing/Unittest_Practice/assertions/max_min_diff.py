@@ -8,7 +8,7 @@ def max_min_diff(numbers):
     in the list.
     :raises ValueError: If the list is empty.
     """
-    assert len(numbers) > 1
+    assert len(numbers) > 1 , "Must provide 2 values"
     return max(numbers) - min(numbers)
     
 
